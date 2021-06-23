@@ -33,11 +33,18 @@ nav a {
 	text-decoration: none;
 }
 
+/*muda a cor da fonte quando o mouse passa por cima */
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
 .produtos {
 	width: 940px;
 	margin: 0 auto;
 	padding: 50px 0;
 }
+
 .produtos li{
 	display: inline-block;
 	text-align: center;
@@ -48,6 +55,19 @@ nav a {
 	box-sizing: border-box;
 	border: 2px solid #000000;
 	border-radius: 10px;
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+/*Quando clicar com o mouse em cima muda de cor*/
+.produtos li:active{
+	border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
 }
 		
 .produtos h2 {
