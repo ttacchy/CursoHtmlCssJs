@@ -124,5 +124,23 @@ form label, form legend {
 	margin: 20px 0;
 }	
 
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: azure;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;/*para mudar a transição de cor*/
+	cursor: pointer;/*Para mudar o ponteiro do mouse para a mãozinha*/
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2);/*Quando o mouse passa por cima aumentar 20%*//*rotate(70deg) -> Girar o elemento*/
+}
+
 
 
