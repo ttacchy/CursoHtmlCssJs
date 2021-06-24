@@ -1,59 +1,100 @@
 @charset "utf-8";
 /* CSS Document */
 
-body {
-	background: #FFFFFF;
+header {
+	background: #BBBBBB;
+	padding: 20px 0;
 }
 
-#banner{
-	width: 100%;
-}
-.principal {
-	background: #CCCCCC;
-	padding: 30px;
+.caixa {
+	width: 940px;
+	position: relative;
+	margin: 0 auto auto;
 }
 
-.titulo-principal{
-	padding-left: 20px;
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+	
+	
 }
 
-.titulo-centralizado {
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-stretch: 22px;
+	text-decoration: none;
+}
+
+/*muda a cor da fonte quando o mouse passa por cima */
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li{
+	display: inline-block;
 	text-align: center;
-	border: 10px solid #91329B;
-	padding: 20px;
-	margin: 40px;
-}
-
-p {
-	text-align: center;	
-}
-
-/*Referencia o id */
-#missao{
-	font-size: 20px;
-}
-
-em strong {
-	color: #FF0000;
-}
-
-/*Referencia a classe */
-.itens {
-	font-style: italic;
-}
-
-.beneficios {
-	background: #FFFFFF;
-	padding: 20px;
-}
-
-ul {
-	display: inline-block;/*ocupa só o tamho do seu espaço, permitindo mexer no restante do espaço*/
+	width: 30%;
 	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
 }
 
-.imagembeneficios {
-	width: 50%;
+.produtos li:hover {
+	border-color: #C78C19;
 }
+
+/*Quando clicar com o mouse em cima muda de cor*/
+.produtos li:active{
+	border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+		
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+/*Exemplo de como colocar uma imagem de fundo/A imagem é de formato pequeno, o CSS copia e cola uma do lado da outra */
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin-top: 20px;
+}
+

@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background: #FFFFFF;
+}
+
+#banner{
+	width: 100%;
+}
+.principal {
+	background: #CCCCCC;
+	padding: 30px;
+}
+
+.titulo-principal{
+	padding-left: 20px;
+}
+
+.titulo-centralizado {
+	text-align: center;
+	border: 10px solid #91329B;
+	padding: 20px;
+	margin: 40px;
+}
+
+p {
+	text-align: center;	
+}
+
+/*Referencia o id */
+#missao{
+	font-size: 20px;
+}
+
+em strong {
+	color: #FF0000;
+}
+
+/*Referencia a classe */
+.itens {
+	font-style: italic;
+}
+
+.beneficios {
+	background: #FFFFFF;
+	padding: 20px;
+}
+
+ul {
+	display: inline-block;/*ocupa só o tamho do seu espaço, permitindo mexer no restante do espaço*/
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%;
+}
+
+.imagembeneficios {
+	width: 50%;
+}
