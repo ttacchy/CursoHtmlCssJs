@@ -142,5 +142,18 @@ form label, form legend {
 	transform: scale(1.2);/*Quando o mouse passa por cima aumentar 20%*//*rotate(70deg) -> Girar o elemento*/
 }
 
+table {
+	margin: 20px 40px;
+}
 
+thead {
+	background: pink;
+	color: darkviolet;
+	font-weight: bold; 
+}
 
+td, th {
+	border: 1px solid #C00FC5;
+	padding: 8px 15px; 
+	color: deeppink;
+}
