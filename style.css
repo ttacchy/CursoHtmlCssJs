@@ -13,15 +13,13 @@ header {
 .caixa {
 	width: 940px;
 	position: relative;
-	margin: 0 auto auto;
+	margin: 0 auto;
 }
 
 nav {
 	position: absolute;
 	top: 110px;
 	right: 0;
-	
-	
 }
 
 nav li {
@@ -99,9 +97,12 @@ footer {
 .copyright {
 	color: #FFFFFF;
 	font-size: 13px;
-	margin-top: 20px;
+	margin-top: 20px 0 0;
 }
 
+main {
+	
+}
 
 form {
 	margin: 40px 0;
@@ -143,7 +144,7 @@ form label, form legend {
 }
 
 table {
-	margin: 20px 40px;
+	margin: 20px 0 40px;
 }
 
 thead {
@@ -168,6 +169,9 @@ td, th {
 	font-size: 2em;/*essa medida é 2x maior que a medida padrão do texto -> por exemplo a medida padrão é 15 o dobro é 30*/
 	margin:  0 0 1em;
 	clear: left;/*limpa o float aplicado na imagem de utensilios*/
+	color: rgba(0,0,0, 0.3);/*este o mode de usar a opacidade em textos*/
+	/*sombra em textos*/
+	text-shadow: 2px 2px lavender;
 }
 
 /*seleciona a primeira letra do titulo*/
@@ -210,11 +214,13 @@ p:first-line {
 }
 
 .utensilios {
-	/*width: 120px;*/
+	width: 120px;
 	/*para calcular proporcionalmente o tamanho*/
-	width: calc(40% - 26px);
+	/*width: calc(40% - 26px);*/
 	float: left;
 	margin: 0 20px 20px 0;
+	/*sombras (x y graudeespalhamento->dosolidoparaotransparente intensidadedaborda cor)*/
+	box-shadow: 5px 10px 30px 10px black, -10px -10px 30px gray, -20px 20px rgba(255,0,0,05);
 }
 
 .mapa {
@@ -235,6 +241,7 @@ p:first-line {
 .beneficios {
 	padding:  3em 0;
 	background: #C965B5;
+	box-shadow: inset 0 0 30px black; 
 }
 
 .conteudo-beneficios {
@@ -261,8 +268,15 @@ p:first-line {
 	content: "➻ ";
 }
 
+/*testar a opacidade da imagem*/
 .imagem-beneficios {
 	width: 60%;
+	opacity: 1;/*representa -> 0.7 - 70%*/
+	transition: 400ms;
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.3;
 }
 
 .video {
