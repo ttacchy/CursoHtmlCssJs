@@ -157,3 +157,37 @@ td, th {
 	padding: 8px 15px; 
 	color: deeppink;
 }
+
+/*css da página inicial*/
+.banner {
+	width: 100%;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;/*essa medida é 2x maior que a medida padrão do texto -> por exemplo a medida padrão é 15 o dobro é 30*/
+	margin:  0 0 1em;
+	clear: left;/*limpa o float aplicado na imagem de utensilios*/
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.imagembeneficios {
+	width: 60%;
+}
